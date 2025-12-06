@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Manual d'Usuari — Quina App</title>
+  <meta name="description" content="Guia completa de l'aplicació Quina. Configuració de pantalles, connexió mòbil i personalització d'sponsors.">
+  <link rel="icon" type="image/png" href="./img/logo_quina.png">
+  
+  <style>
+    :root{--accent:#0ea5a4;--dark:#0f172a;--muted:#64748b;--bg:#f8fafc;--border:#e2e8f0}
+    *{box-sizing:border-box}
+    body{font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;color:var(--dark);background:var(--bg)}
+    
+    /* Header */
+    header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;padding:0 20px}
+    .nav-inner{max-width:1200px;margin:0 auto;height:60px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;font-size:18px;text-decoration:none;color:var(--dark);display:flex;align-items:center;gap:10px}
+    .btn-back{font-size:14px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:5px}
+    .btn-back:hover{color:var(--accent)}
+
+    /* Layout */
+    .wrapper{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:40px;padding:40px 20px}
+    @media(min-width:900px){.wrapper{grid-template-columns:250px 1fr}}
+
+    /* Sidebar (Index) */
+    aside{position:sticky;top:80px;height:fit-content}
+    .toc-title{font-size:12px;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:10px;letter-spacing:1px}
+    .toc ul{list-style:none;padding:0;margin:0}
+    .toc li{margin-bottom:8px}
+    .toc a{text-decoration:none;color:var(--dark);font-size:14px;display:block;padding:5px 0;border-left:2px solid transparent;padding-left:15px;transition:all 0.2s}
+    .toc a:hover{color:var(--accent);border-left-color:var(--accent)}
+
+    /* Content */
+    main{background:#fff;padding:40px;border-radius:12px;border:1px solid var(--border);box-shadow:0 4px 6px -1px rgba(0,0,0,0.02)}
+    h1{margin-top:0;font-size:32px}
+    h2{margin-top:40px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+    h3{margin-top:30px;color:#334155;font-size:1.2rem}
+    h4{margin-bottom:5px; color:#475569}
+    p, li{color:#334155}
+    
+    /* Imatges generals (paisatge) */
+    img{max-width:100%;border-radius:8px;border:1px solid var(--border);margin:20px 0;box-shadow:0 4px 6px -2px rgba(0,0,0,0.05)}
+    
+    /* Classe especial per a captures de mòbil (retrat) */
+    .mobile-screenshot {
+        max-width: 320px; /* Amplada limitada per semblar un mòbil */
+        display: block;
+        margin: 20px auto; /* Centrat */
+    }
+    
+    /* Alerts & Tips */
+    .alert{background:#eff6ff;border-left:4px solid var(--accent);padding:15px;margin:20px 0;border-radius:0 8px 8px 0}
+    .alert.tip{background:#f0fdf4;border-left-color:#22c55e}
+    .kbd{background:#f1f5f9;padding:2px 6px;border-radius:4px;font-family:monospace;font-weight:bold;border:1px solid #cbd5e1;font-size:0.85em}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="/" class="logo">
+      <img src="./img/logo_quina.png" width="30" height="30" style="border-radius:6px"> Quina Docs
+    </a>
+    <a href="/" class="btn-back">
+      &larr; Tornar a la web
+    </a>
+  </div>
+</header>
+
+<div class="wrapper">
+  
+  <aside class="toc">
+    <div class="toc-title">Contingut</div>
+    <ul>
+      <li><a href="#basics">1. Conceptes Bàsics</a></li>
+      <li><a href="#pantalles">2. Gestió de Pantalles</a></li>
+      <li><a href="#connexio">3. Connexió del Mòbil</a></li>
+      <li><a href="#joc">4. Funcionament del Joc</a></li>
+      <li><a href="#sponsors">5. Gestió d'Sponsors</a></li>
+      <li><a href="#personalitzacio">6. Personalització</a></li>
+      <li><a href="#faq">7. Solució de Problemes</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>Manual d'Usuari</h1>
+    <p class="lead">Benvingut a la guia oficial. Aprèn a configurar la teva partida pas a pas.</p>
+
+    <h2 id="basics">1. Conceptes Bàsics</h2>
+    <p>En obrir l'aplicació d'escriptori, veuràs que s'obren <strong>dues finestres</strong> diferents:</p>
+    <ul>
+        <li><strong>Finestra de Projecció ("MainWindow"):</strong> És la pantalla que veurà el públic. Mostra la taula de números i els col·laboradors. Sempre està en pantalla completa.</li>
+        <li><strong>Finestra de Configuració ("Controlador"):</strong> És el teu panell de control privat. Des d'aquí configures els colors, els sponsors i veus la informació de connexió.</li>
+    </ul>
+    
+    <div class="alert tip">
+      <strong>Truc:</strong> Si tanques el "Controlador", pots prémer la tecla <span class="kbd">q</span> al teclat per tornar-lo a obrir.
+    </div>
+
+    <img src="./img/img_controlador.png" alt="Captura del Controlador" onerror="this.style.display='none'">
+
+    <h2 id="pantalles">2. Gestió de Pantalles</h2>
+    <p>L'aplicació està dissenyada per treballar amb dos monitors (o Portàtil + Projector).</p>
+    <ol>
+        <li>Connecta el projector al teu ordinador i configura Windows en mode <strong>"Estendre Pantalla"</strong>.</li>
+        <li>Al "Controlador", busca el desplegable anomenat <strong>"Pantalla"</strong>.</li>
+        <li>Selecciona on vols enviar la projecció (per exemple: "Pantalla 2"). La finestra de projecció es mourà automàticament.</li>
+    </ol>
+
+    <h2 id="connexio">3. Connexió del Mòbil</h2>
+    <p>Per controlar la partida a distància, necessites l'app Android <strong>"Quina"</strong>.</p>
+    
+    <div class="alert">
+        <strong>Important:</strong> El mòbil i l'ordinador han d'estar connectats a la <strong>mateixa xarxa Wi-Fi</strong>.
+    </div>
+
+    <h3>Pas 1: Obtenir la IP</h3>
+    <p>Al "Controlador" de l'ordinador, ves a la pestanya o apartat <strong>"INFO"</strong>. Allà hi trobaràs la teva <strong>IP Local</strong> (ex: <code>192.168.1.XX</code>) i el Port (sempre és <code>12345</code>).</p>
+
+    <h3>Pas 2: Configurar l'App Mòbil</h3>
+    <ol>
+        <li>Obre l'app "Quina" al mòbil.</li>
+        <li>Ves a <strong>"Nova Connexió"</strong>.</li>
+        <li>Omple les dades:
+            <ul>
+                <li><strong>Nom:</strong> Posa un nom per recordar la sala (ex: "Pavelló").</li>
+                <li><strong>IP:</strong> Escriu la IP que has vist al Controlador.</li>
+                <li><strong>Port:</strong> Deixa el <code>12345</code> (ve per defecte).</li>
+            </ul>
+        </li>
+        <li>Prem <strong>Guardar</strong>.</li>
+    </ol>
+
+    <img src="./img/img_mobile_conn.png" class="mobile-screenshot" alt="Pantalla de Connexió al Mòbil" onerror="this.style.display='none'">
+
+    <p>Si la connexió és correcta, l'ordinador mostrarà un avís i el mòbil obrirà el panell de control.</p>
+
+    <h2 id="joc">4. Funcionament del Joc (Des del Mòbil)</h2>
+    <p>Un cop connectat, tindràs el control total des del telèfon:</p>
+    <ul>
+        <li><strong>Marcar números:</strong> Fes <strong>doble clic</strong> sobre qualsevol número de la graella (1-90) per marcar-lo o desmarcar-lo.</li>
+        <li><strong>Botó "Desfer":</strong> Si t'has equivocat, prem-lo per cancel·lar l'última acció.</li>
+        <li><strong>Botó "Netejar":</strong> Esborra tots els números per començar una nova partida.</li>
+        <li><strong>Botó "Ensenyar Col·laboradors":</strong> Força que es mostrin els sponsors a la pantalla gran.</li>
+    </ul>
+
+    <h2 id="sponsors">5. Gestió d'Sponsors</h2>
+    <p>Pots personalitzar la barra lateral de la projecció des del "Controlador". Hi ha dos botons clau:</p>
+    <ul>
+        <li><strong>Imatges:</strong> Obre una finestra per seleccionar i carregar els logotips (JPG/PNG) dels teus col·laboradors. Pots seleccionar-ne múltiples de cop.</li>
+        <li><strong>Llista:</strong> Obre un editor per escriure els noms dels col·laboradors de text (un per línia).</li>
+    </ul>
+    <p>Pots ajustar la mida de la barra lateral arrossegant la línia divisòria a la finestra de projecció.</p>
+
+    <h2 id="personalitzacio">6. Personalització</h2>
+    <p>Fes que la Quina llueixi com tu vulguis. Totes aquestes opcions es troben al "Controlador":</p>
+
+    <h3>Visualització dels Números</h3>
+    <ul>
+        <li><strong>Color fons números marcats:</strong> Tria quin color tindran els números que ja han sortit.</li>
+        <li><strong>Animació números:</strong> Activa/Desactiva l'efecte de "zoom" quan surt un número nou.</li>
+        <li><strong>Números Intermitents:</strong> Fes que l'últim número marcat parpellegi (blanc/color) per destacar-lo.</li>
+        <li><strong>Últim número diferent:</strong> Pots triar un color específic només per a l'última bola cantada.</li>
+    </ul>
+
+    <h3>Visualització dels Col·laboradors</h3>
+    <ul>
+        <li><strong>Títol:</strong> Canvia el text de la capçalera (per defecte "Col·laboradors") i el seu color.</li>
+        <li><strong>Fons:</strong> Canvia el color de fons de la barra lateral.</li>
+        <li><strong>Tipografia:</strong> Tria la font de lletra que millor es llegeixi.</li>
+        <li><strong>Mides:</strong> Ajusta independentment la mida de les imatges, la mida del text i l'espai de separació entre noms.</li>
+    </ul>
+
+    <h2 id="faq">7. Solució de Problemes</h2>
+    
+    <h4>El mòbil no es connecta</h4>
+    <p>Assegura't d'haver permès l'accés a xarxes privades/públiques quan Windows t'ho ha demanat la primera vegada (Firewall). Comprova que la IP del mòbil és idèntica a la de la pestanya INFO.</p>
+
+    <h4>He tancat el controlador sense voler</h4>
+    <p>Prem la tecla <span class="kbd">q</span> amb la finestra de projecció seleccionada i tornarà a aparèixer.</p>
+
+  </main>
+</div>
+
+</body>
+</html>
