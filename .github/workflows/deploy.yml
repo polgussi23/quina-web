@@ -22,6 +22,6 @@ jobs:
         port: 22
 
         local_path: './'
-        remote_path: '/web/'
+        remote_path: './web/'
         
         sftp_args: '-o StrictHostKeyChecking=no'
