@@ -1,17 +1,16 @@
 <!doctype html>
-<html lang="ca">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Quina.cat — Programari per a Quina, Quinto i Bingo (Windows + Android)</title>
+  <title>Quina.cat — Software para Bingo, Quina y Quinto (Windows + Android)</title>
   
   <link rel="icon" type="image/png" href="./img/logo_quina.png">
+  <link rel="canonical" href="https://quina.cat/index_es.html">
 
-  <link rel="canonical" href="https://quina.cat/">
-
-  <meta name="description" content="La millor aplicació per projectar i controlar Quines, Quintos i Bingos populars. Ideal per a associacions, escoles i festes de Nadal a Catalunya.">
-  <meta property="og:title" content="Quina — Programari professional per a Quines">
-  <meta property="og:description" content="Controla la projecció de la quina des del mòbil. Ideal per associacions i esdeveniments.">
+  <meta name="description" content="La mejor aplicación para proyectar y controlar Bingos, Quinas y Quintos populares. Ideal para asociaciones, escuelas y fiestas de Navidad.">
+  <meta property="og:title" content="Quina — Software profesional para Bingo y Quina">
+  <meta property="og:description" content="Controla la proyección del bingo desde el móvil. Ideal para asociaciones y eventos.">
   <meta property="og:image" content="./logo_quina.png">
   <meta property="og:type" content="website">
 
@@ -34,6 +33,12 @@
     .logo-img{width:40px;height:40px;border-radius:10px;object-fit:cover}
     .brand-title{font-weight:800;font-size:18px;letter-spacing:-0.5px;line-height:1}
     
+    /* Language Switcher */
+    .lang-switch { display: flex; gap: 10px; font-size: 0.9rem; margin-right: 20px; }
+    .lang-switch a { text-decoration: none; color: var(--muted); font-weight: 500; }
+    .lang-switch a.active { color: var(--accent); font-weight: 800; border-bottom: 2px solid var(--accent); }
+    .lang-switch a:hover { color: var(--accent); }
+
     /* Layout */
     .container{max-width:1100px;margin:0 auto;padding:40px 24px}
     h1{font-size:clamp(2.2rem, 5vw, 3.5rem);margin:0 0 20px;line-height:1.1;letter-spacing:-1.5px;color:#1e293b}
@@ -175,11 +180,6 @@
         color: #2563eb;
         font-weight: bold;
     }
-
-    .lang-switch { display: flex; gap: 10px; font-size: 0.9rem; margin-right: 20px; }
-    .lang-switch a { text-decoration: none; color: var(--muted); font-weight: 500; }
-    .lang-switch a.active { color: var(--accent); font-weight: 800; border-bottom: 2px solid var(--accent); }
-    .lang-switch a:hover { color: var(--accent); }
   </style>
 
   <script type="application/ld+json">
@@ -199,7 +199,7 @@
       "price": "14.99",
       "priceCurrency": "EUR"
     },
-    "description": "Programari per projectar i controlar partides de Quina i Quinto de Nadal des de l'ordinador amb control remot mòbil."
+    "description": "Software para proyectar y controlar partidas de Quina, Quinto y Bingo desde el ordenador con control remoto móvil."
   }
   </script>
 
@@ -214,12 +214,12 @@
            <div class="brand-title">Quina</div>
         </div>
       </div>
-      
+
       <div style="display:flex; align-items:center;">
           <div class="lang-switch">
-              <a href="#" class="active">CAT</a>
+              <a href="./index.html">CAT</a>
               <span>|</span>
-              <a href="./index_es.html">ESP</a>
+              <a href="#" class="active">ESP</a>
           </div>
 
           <a class="btn btn-buy" style="padding:8px 16px; font-size:0.9rem;" href="https://polgussi.gumroad.com/l/quina/sgqzfml" target="_blank">
@@ -233,46 +233,46 @@
     <section class="hero">
       
       <div>
-        <span class="badge">🚀 Versió 1.0 Disponible</span>
-        <h1>Projecta la teva <span style="color:var(--accent)">Quina o Quinto</span> sense complicacions</h1>
-        <p class="lead">L'eina definitiva per a associacions. Genera la pantalla de joc a l'ordinador i controla la <strong>Quina, Quinto o Rifa</strong> des del mòbil per Wi-Fi.</p>
+        <span class="badge">🚀 Versión 1.0 Disponible</span>
+        <h1>Proyecta tu <span style="color:var(--accent)">Bingo, Quina o Quinto</span> sin complicaciones</h1>
+        <p class="lead">La herramienta definitiva para asociaciones. Genera la pantalla de juego en el ordenador y controla el <strong>Bingo, Quinto o Rifa</strong> desde el móvil por Wi-Fi.</p>
 
         <div class="cta-row">
           <a class="btn btn-buy" href="https://polgussi.gumroad.com/l/quina/sgqzfml" target="_blank">
-            Comprar llicència
+            Comprar licencia
             <span class="price-tag">| <s style="opacity:0.7">24,99€</s> 14,99€</span>
           </a>
 
           <a class="btn btn-demo" href="https://polgussi.gumroad.com/l/quina_demo" target="_blank">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Provar Demo
+            Descargar Demo Gratis
           </a>
 
           <div class="smartscreen-alert">
             <div style="display:flex; gap:10px; align-items:start">
               <span style="font-size:1.2rem">🛡️</span>
               <div>
-                <strong>Avís d'instal·lació (Windows):</strong><br>
-                Com que és una app nova, Windows pot mostrar l'avís "Va protegir el vostre PC".<br>
-                És segur. Fes clic a <strong>"Més informació"</strong> i després a <strong>"Executa de totes maneres"</strong>.
+                <strong>Aviso de instalación (Windows):</strong><br>
+                Al ser una app nueva, Windows puede mostrar el aviso "Protegió su PC".<br>
+                Es seguro. Haz clic en <strong>"Más información"</strong> y luego en <strong>"Ejecutar de todas formas"</strong>.
               </div>
             </div>
           </div>
         </div>
 
         <div class="android-section">
-            <span class="android-label">Descarrega el comandament (Android):</span>
+            <span class="android-label">Descarga el mando (Android):</span>
             
             <div style="display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap">
                 <a class="btn btn-apk" href="./quina_remote.apk" download>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.95 2.95 0 0 1-.694-1.288L2.001 3.593a2.95 2.95 0 0 1 1.608-1.779zM15.68 13.886l-1.89-1.89-1.892 1.892 7.608 4.312c.797.452 1.765.342 2.458-.225l-6.284-4.089zM16.246 9.55l5.706-3.712c-.754-.627-1.805-.733-2.657-.25L13.9 8.214l2.346 1.336zM11.9 10.11l-7.23-7.23c.365-.192.776-.296 1.196-.282L11.9 10.11z"/></svg>
-                    Descarregar APK
+                    Descargar APK
                 </a>
 
                 <div class="install-box">
-                    <strong>⚠️ Nota d'instal·lació:</strong><br>
-                    Estem en procés de validació a Google Play. De moment, descarrega aquest fitxer.<br>
-                    Si el mòbil et pregunta, accepta <strong>"Instal·lar aplicacions desconegudes"</strong> o <strong>"Fonts desconegudes"</strong> per continuar.
+                    <strong>⚠️ Nota de instalación:</strong><br>
+                    Estamos en proceso de validación en Google Play. De momento, descarga este archivo.<br>
+                    Si el móvil pregunta, acepta <strong>"Instalar aplicaciones desconocidas"</strong> o <strong>"Fuentes desconocidas"</strong> para continuar.
                 </div>
             </div>
         </div>
@@ -289,37 +289,37 @@
 
     <section id="tutorial" style="margin-top:80px; margin-bottom:80px">
         <div style="text-align:center; max-width:700px; margin:0 auto 50px auto">
-            <h2>Com projectar una quina en 3 passos</h2>
-            <p class="lead">El nostre programari per a quines està dissenyat per ser ràpid i fàcil. Segueix aquesta guia per començar en menys de 2 minuts.</p>
+            <h2>Cómo proyectar un Bingo/Quina en 3 pasos</h2>
+            <p class="lead">Nuestro software está diseñado para ser rápido y fácil. Sigue esta guía para empezar en menos de 2 minutos.</p>
         </div>
 
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:40px">
             
             <div class="card" style="border:none; box-shadow:none; background:transparent; padding:0">
                 <div style="font-size:4rem; font-weight:800; color:#e2e8f0; line-height:1; margin-bottom:10px">01</div>
-                <h3 style="margin-top:0">Instal·la el programari al PC</h3>
-                <p class="small">Descarrega i instal·la <strong>Quina per a Windows</strong>. Connecta l'ordinador al projector o pantalla gegant on vulguis mostrar els números.</p>
+                <h3 style="margin-top:0">Instala el software en el PC</h3>
+                <p class="small">Descarga e instala <strong>Quina para Windows</strong>. Conecta el ordenador al proyector o pantalla gigante donde quieras mostrar los números.</p>
             </div>
 
             <div class="card" style="border:none; box-shadow:none; background:transparent; padding:0">
                 <div style="font-size:4rem; font-weight:800; color:#e2e8f0; line-height:1; margin-bottom:10px">02</div>
-                <h3 style="margin-top:0">Connecta l'App de control</h3>
-                <p class="small">Obre l'<strong>app Android</strong> al teu mòbil. Connecta't a la mateixa Wi-Fi que el PC i posa la IP que veuràs al menú INFO del programa.</p>
+                <h3 style="margin-top:0">Conecta la App de control</h3>
+                <p class="small">Abre la <strong>app Android</strong> en tu móvil. Conéctate a la misma Wi-Fi que el PC e introduce la IP que verás en el menú INFO del programa.</p>
             </div>
 
             <div class="card" style="border:none; box-shadow:none; background:transparent; padding:0">
                 <div style="font-size:4rem; font-weight:800; color:#e2e8f0; line-height:1; margin-bottom:10px">03</div>
-                <h3 style="margin-top:0">Comença a jugar!</h3>
-                <p class="small">Ja tens el control! Prem "Següent número" des del mòbil per fer sortir la bola. Pots cantar línia, quina o reiniciar la partida a distància.</p>
+                <h3 style="margin-top:0">¡Empieza a jugar!</h3>
+                <p class="small">¡Ya tienes el control! Pulsa "Siguiente número" desde el móvil para sacar bola. Puedes cantar línea, bingo o reiniciar la partida a distancia.</p>
             </div>
 
         </div>
         <div style="text-align:center; margin-top:50px">
-          <p class="small" style="margin-bottom:15px; color:#64748b">Encara tens dubtes o no aconsegueixes connectar?</p>
+          <p class="small" style="margin-bottom:15px; color:#64748b">¿Tienes dudas o no consigues conectar?</p>
           
           <a href="./manual.html" class="btn secondary" style="border-radius:50px; padding-left:30px; padding-right:30px">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              Consulta el Manual d'Usuari Complet
+              Consulta el Manual de Usuario
           </a>
       </div>
     </section>
@@ -327,42 +327,42 @@
     <section id="features">
       <div class="feature-card">
         <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
-        <h3>Control des del Mòbil</h3>
-        <p class="small">Oblida't de ser al costat de l'ordinador. Mou-te per la sala i controla la partida des del telèfon.</p>
+        <h3>Control desde el Móvil</h3>
+        <p class="small">Olvídate de estar pegado al ordenador. Muévete por la sala y controla la partida desde el teléfono.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-        <h3>Sponsors Locals</h3>
-        <p class="small">Ideal per monetitzar l'acte. Projecta els logotips dels comerços col·laboradors automàticament.</p>
+        <h3>Patrocinadores Locales</h3>
+        <p class="small">Ideal para monetizar el acto. Proyecta los logotipos de los comercios colaboradores automáticamente.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
-        <h3>Sense Internet</h3>
-        <p class="small">El sistema funciona 100% en local. Màxima privacitat i fiabilitat sense dependre de la connexió a internet.</p>
+        <h3>Sin Internet</h3>
+        <p class="small">El sistema funciona 100% en local. Máxima privacidad y fiabilidad sin depender de la conexión a internet.</p>
       </div>
     </section>
 
     <section style="margin-top:80px; max-width:800px; margin-left:auto; margin-right:auto">
-        <h2 style="margin-bottom:40px">Preguntes Freqüents</h2>
+        <h2 style="margin-bottom:40px">Preguntas Frecuentes</h2>
         
         <div style="margin-bottom:24px">
-            <h4 style="margin-bottom:8px">Puc provar-la abans de comprar?</h4>
-            <p class="small">Sí! Descarrega la versió Demo gratuïta. Té totes les funcions però està limitada a 20 números per partida.</p>
+            <h4 style="margin-bottom:8px">¿Puedo probarla antes de comprar?</h4>
+            <p class="small">¡Sí! Descarga la versión Demo gratuita. Tiene todas las funciones pero está limitada a 20 números por partida.</p>
         </div>
 
         <div style="margin-bottom:24px">
-            <h4 style="margin-bottom:8px">És un pagament únic?</h4>
-            <p class="small">Sí. Pagues 14,99€ (Oferta) una vegada i l'aplicació és teva per sempre.</p>
+            <h4 style="margin-bottom:8px">¿Es un pago único?</h4>
+            <p class="small">Sí. Pagas 14,99€ (Oferta) una vez y la aplicación es tuya para siempre, incluyendo actualizaciones.</p>
         </div>
 
         <div>
-            <h4 style="margin-bottom:8px">Necessito un ordinador molt potent?</h4>
-            <p class="small">No. Funciona perfectament en qualsevol ordinador amb Windows 10 o 11, fins i tot portàtils bàsics.</p>
+            <h4 style="margin-bottom:8px">¿Necesito un ordenador potente?</h4>
+            <p class="small">No. Funciona perfectamente en cualquier ordenador con Windows 10 o 11, incluso portátiles básicos.</p>
         </div>
 
         <div style="margin-bottom:24px">
-            <h4 style="margin-bottom:8px">Serveix per jugar al Quinto o Bingo?</h4>
-            <p class="small">I tant! Tot i que l'app es diu "Quina", el sistema de 90 números és idèntic per al Quinto de Nadal, la Rifa o el Bingo popular.</p>
+            <h4 style="margin-bottom:8px">¿Sirve para jugar al Bingo o Quinto?</h4>
+            <p class="small">¡Por supuesto! Aunque la app se llame "Quina", el sistema de 90 números es idéntico para el Quinto de Navidad, la Rifa o el Bingo popular.</p>
         </div>
     </section>
 
@@ -370,10 +370,13 @@
 
   <footer>
     <div class="container footer-content">
-      <p class="small">© 2025 <strong>GuSSI</strong>. Fet a Catalunya.</p>
-      <div class="small" style="opacity:0.7">
-        <a href="mailto:pol@polgussi.cat" style="color:inherit">Suport</a> &bull; 
-        <a href="./privacitat.html" style="color:inherit">Privacitat</a>
+      <p class="small">© 2025 <strong>GuSSI</strong>. Hecho en Cataluña.</p>
+      <div class="small" style="opacity:0.7; font-size: 0.8em; margin-top:5px">
+         GuSSI es un nombre comercial de Pol Gussinyer.
+      </div>
+      <div class="small" style="opacity:0.7; margin-top:15px">
+        <a href="mailto:pol@polgussi.cat" style="color:inherit">Soporte</a> &bull; 
+        <a href="./privacitat.html" style="color:inherit">Privacidad</a>
       </div>
     </div>
   </footer>
