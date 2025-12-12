@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Manual de Usuario — Quina.cat</title>
+  <meta name="description" content="Guía completa de la aplicación Quina/Bingo. Configuración de pantallas, conexión móvil y personalización de patrocinadores.">
+  <link rel="icon" type="image/png" href="./img/logo_quina.png">
+  
+  <style>
+    :root{--accent:#0ea5a4;--dark:#0f172a;--muted:#64748b;--bg:#f8fafc;--border:#e2e8f0}
+    *{box-sizing:border-box}
+    body{font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;color:var(--dark);background:var(--bg)}
+    
+    /* Header */
+    header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;padding:0 20px}
+    .nav-inner{max-width:1200px;margin:0 auto;height:60px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;font-size:18px;text-decoration:none;color:var(--dark);display:flex;align-items:center;gap:10px}
+    .btn-back{font-size:14px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:5px}
+    .btn-back:hover{color:var(--accent)}
+
+    /* Layout */
+    .wrapper{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:40px;padding:40px 20px}
+    @media(min-width:900px){.wrapper{grid-template-columns:250px 1fr}}
+
+    /* Sidebar (Index) */
+    aside{position:sticky;top:80px;height:fit-content}
+    .toc-title{font-size:12px;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:10px;letter-spacing:1px}
+    .toc ul{list-style:none;padding:0;margin:0}
+    .toc li{margin-bottom:8px}
+    .toc a{text-decoration:none;color:var(--dark);font-size:14px;display:block;padding:5px 0;border-left:2px solid transparent;padding-left:15px;transition:all 0.2s}
+    .toc a:hover{color:var(--accent);border-left-color:var(--accent)}
+
+    /* Content */
+    main{background:#fff;padding:40px;border-radius:12px;border:1px solid var(--border);box-shadow:0 4px 6px -1px rgba(0,0,0,0.02)}
+    h1{margin-top:0;font-size:32px}
+    h2{margin-top:40px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+    h3{margin-top:30px;color:#334155;font-size:1.2rem}
+    h4{margin-bottom:5px; color:#475569}
+    p, li{color:#334155}
+    
+    /* Imagenes generales (paisaje) */
+    img{max-width:100%;border-radius:8px;border:1px solid var(--border);margin:20px 0;box-shadow:0 4px 6px -2px rgba(0,0,0,0.05)}
+    
+    /* Clase especial para capturas de móvil (retrato) */
+    .mobile-screenshot {
+        max-width: 320px; /* Ancho limitado para parecer un móvil */
+        display: block;
+        margin: 20px auto; /* Centrado */
+    }
+    
+    /* Alerts & Tips */
+    .alert{background:#eff6ff;border-left:4px solid var(--accent);padding:15px;margin:20px 0;border-radius:0 8px 8px 0}
+    .alert.tip{background:#f0fdf4;border-left-color:#22c55e}
+    .kbd{background:#f1f5f9;padding:2px 6px;border-radius:4px;font-family:monospace;font-weight:bold;border:1px solid #cbd5e1;font-size:0.85em}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="./index_es.html" class="logo">
+      <img src="./img/logo_quina.png" width="30" height="30" style="border-radius:6px"> Quina Docs
+    </a>
+    <a href="./index_es.html" class="btn-back">
+      &larr; Volver a la web
+    </a>
+  </div>
+</header>
+
+<div class="wrapper">
+  
+  <aside class="toc">
+    <div class="toc-title">Contenido</div>
+    <ul>
+      <li><a href="#basics">1. Conceptos Básicos</a></li>
+      <li><a href="#pantalles">2. Gestión de Pantallas</a></li>
+      <li><a href="#connexio">3. Conexión del Móvil</a></li>
+      <li><a href="#joc">4. Funcionamiento del Juego</a></li>
+      <li><a href="#sponsors">5. Gestión de Patrocinadores</a></li>
+      <li><a href="#personalitzacio">6. Personalización</a></li>
+      <li><a href="#faq">7. Solución de Problemas</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>Manual de Usuario</h1>
+    <p class="lead">Bienvenido a la guía oficial. Aprende a configurar tu partida paso a paso.</p>
+
+    <h2 id="basics">1. Conceptos Básicos</h2>
+    <p>Al abrir la aplicación de escritorio, verás que se abren <strong>dos ventanas</strong> diferentes:</p>
+    <ul>
+        <li><strong>Ventana de Proyección ("MainWindow"):</strong> Es la pantalla que verá el público. Muestra la tabla de números y los colaboradores. Siempre está en pantalla completa.</li>
+        <li><strong>Ventana de Configuración ("Controlador"):</strong> Es tu panel de control privado. Desde aquí configuras los colores, los patrocinadores y ves la información de conexión.</li>
+    </ul>
+    
+    <div class="alert tip">
+      <strong>Truco:</strong> Si cierras el "Controlador" por error, puedes pulsar la tecla <span class="kbd">q</span> en el teclado para volver a abrirlo.
+    </div>
+
+    <img src="./img/img_controlador.png" alt="Captura del Controlador" onerror="this.style.display='none'">
+
+    <h2 id="pantalles">2. Gestión de Pantallas</h2>
+    <p>La aplicación está diseñada para trabajar con dos monitores (o Portátil + Proyector).</p>
+    <ol>
+        <li>Conecta el proyector a tu ordenador y configura Windows en modo <strong>"Extender Pantalla"</strong>.</li>
+        <li>En el "Controlador", busca el desplegable llamado <strong>"Pantalla"</strong>.</li>
+        <li>Selecciona dónde quieres enviar la proyección (por ejemplo: "Pantalla 2"). La ventana de proyección se moverá automáticamente.</li>
+    </ol>
+
+    <h2 id="connexio">3. Conexión del Móvil</h2>
+    <p>Para controlar la partida a distancia, necesitas la app Android <strong>"Quina"</strong>.</p>
+    
+    <div class="alert">
+        <strong>Importante:</strong> El móvil y el ordenador deben estar conectados a la <strong>misma red Wi-Fi</strong>.
+    </div>
+
+    <h3>Paso 1: Obtener la IP</h3>
+    <p>En el "Controlador" del ordenador, ve a la pestaña o apartado <strong>"INFO"</strong>. Allí encontrarás tu <strong>IP Local</strong> (ej: <code>192.168.1.XX</code>) y el Puerto (siempre es <code>12345</code>).</p>
+
+    <h3>Paso 2: Configurar la App Móvil</h3>
+    <ol>
+        <li>Abre la app "Quina" en el móvil.</li>
+        <li>Ve a <strong>"Nova Connexió"</strong> (Nueva Conexión).</li>
+        <li>Rellena los datos:
+            <ul>
+                <li><strong>Nom (Nombre):</strong> Pon un nombre para recordar la sala (ej: "Pabellón").</li>
+                <li><strong>IP:</strong> Escribe la IP que has visto en el Controlador.</li>
+                <li><strong>Port (Puerto):</strong> Deja el <code>12345</code> (viene por defecto).</li>
+            </ul>
+        </li>
+        <li>Pulsa <strong>Guardar</strong>.</li>
+    </ol>
+
+    <img src="./img/img_mobile_conn.png" class="mobile-screenshot" alt="Pantalla de Conexión en el Móvil" onerror="this.style.display='none'">
+
+    <p>Si la conexión es correcta, el ordenador mostrará un aviso y el móvil abrirá el panel de control.</p>
+
+    <h2 id="joc">4. Funcionamiento del Juego (Desde el Móvil)</h2>
+    <p>Una vez conectado, tendrás el control total desde el teléfono:</p>
+    <ul>
+        <li><strong>Marcar números:</strong> Haz <strong>doble clic</strong> sobre cualquier número de la parrilla (1-90) para marcarlo o desmarcarlo.</li>
+        <li><strong>Botón "Desfer" (Deshacer):</strong> Si te has equivocado, púlsalo para cancelar la última acción.</li>
+        <li><strong>Botón "Netejar" (Limpiar):</strong> Borra todos los números para empezar una nueva partida.</li>
+        <li><strong>Botón "Ensenyar Col·laboradors":</strong> Fuerza que se muestren los patrocinadores en la pantalla grande.</li>
+    </ul>
+
+    <h2 id="sponsors">5. Gestión de Patrocinadores</h2>
+    <p>Puedes personalizar la barra lateral de la proyección desde el "Controlador". Hay dos botones clave:</p>
+    <ul>
+        <li><strong>Imatges (Imágenes):</strong> Abre una ventana para seleccionar y cargar los logotipos (JPG/PNG) de tus colaboradores. Puedes seleccionar múltiples a la vez.</li>
+        <li><strong>Llista (Lista):</strong> Abre un editor para escribir los nombres de los colaboradores de texto (uno por línea).</li>
+    </ul>
+    <p>Puedes ajustar el tamaño de la barra lateral arrastrando la línea divisoria en la ventana de proyección.</p>
+
+    <h2 id="personalitzacio">6. Personalización</h2>
+    <p>Haz que el Bingo luzca como tú quieras. Todas estas opciones se encuentran en el "Controlador":</p>
+
+    <h3>Visualización de los Números</h3>
+    <ul>
+        <li><strong>Color fondo números marcados:</strong> Elige qué color tendrán los números que ya han salido.</li>
+        <li><strong>Animación números:</strong> Activa/Desactiva el efecto de "zoom" cuando sale un número nuevo.</li>
+        <li><strong>Números Intermitentes:</strong> Haz que el último número marcado parpadee (blanco/color) para destacarlo.</li>
+        <li><strong>Último número diferente:</strong> Puedes elegir un color específico solo para la última bola cantada.</li>
+    </ul>
+
+    <h3>Visualización de los Colaboradores</h3>
+    <ul>
+        <li><strong>Título:</strong> Cambia el texto de la cabecera (por defecto "Col·laboradors") y su color.</li>
+        <li><strong>Fondo:</strong> Cambia el color de fondo de la barra lateral.</li>
+        <li><strong>Tipografía:</strong> Elige la fuente de letra que mejor se lea.</li>
+        <li><strong>Tamaños:</strong> Ajusta independientemente el tamaño de las imágenes, el tamaño del texto y el espacio de separación entre nombres.</li>
+    </ul>
+
+    <h2 id="faq">7. Solución de Problemas</h2>
+    
+    <h4>El móvil no se conecta</h4>
+    <p>Asegúrate de haber permitido el acceso a redes privadas/públicas cuando Windows te lo ha pedido la primera vez (Firewall). Comprueba que la IP del móvil es idéntica a la de la pestaña INFO.</p>
+
+    <h4>He cerrado el controlador sin querer</h4>
+    <p>Pulsa la tecla <span class="kbd">q</span> con la ventana de proyección seleccionada y volverá a aparecer.</p>
+
+  </main>
+</div>
+
+</body>
+</html>
