@@ -180,6 +180,47 @@
         color: #2563eb;
         font-weight: bold;
     }
+
+    /* CONTACT SECTION */
+    .contact-section {
+        max-width: 600px;
+        margin: 80px auto 0;
+        background: #f8fafc; /* Gris molt suau */
+        padding: 40px;
+        border-radius: 20px;
+        border: 1px solid #e2e8f0;
+    }
+    .form-group { margin-bottom: 20px; text-align: left; }
+    .form-label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; color: var(--dark); }
+    .form-input { 
+        width: 100%; 
+        padding: 12px 16px; 
+        border: 1px solid #cbd5e1; 
+        border-radius: 10px; 
+        font-family: inherit; 
+        font-size: 1rem;
+        transition: all 0.2s;
+        background: white;
+    }
+    .form-input:focus { 
+        outline: none; 
+        border-color: var(--accent); 
+        box-shadow: 0 0 0 3px rgba(14, 165, 164, 0.1); 
+    }
+    .btn-submit {
+        width: 100%;
+        background: var(--dark);
+        color: white;
+        border: none;
+        justify-content: center;
+        cursor: pointer;
+        padding: 16px;
+        font-size: 1.1rem;
+    }
+    .btn-submit:hover {
+        background: #334155;
+        transform: translateY(-2px);
+    }
   </style>
 
   <script type="application/ld+json">
@@ -369,15 +410,49 @@
             <p class="small">La pantalla de proyección (números y fotos) es totalmente visual y universal. El panel de control para el organizador está actualmente en <strong>catalán</strong>, pero es muy intuitivo y fácil de usar para cualquier hispanohablante. Aún así ya estamos trabajando en la traducción al español que recibirás gratuitamente en la próxima actualización.</p>
         </div>
     </section>
+    <section id="contacte" class="contact-section">
+        <h2 style="margin-bottom:10px">Hablamos?</h2>
+        <p class="lead" style="font-size:1rem; margin-bottom:30px">
+            Tienes alguna duda tècnica o quieres una función a tu medida? Te ayudo personalmente.  
+        </p>
+
+        <form action="https://formsubmit.co/pol@polgussi.cat" method="POST">
+            
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://quina.cat/gracies_es.html">
+            <input type="hidden" name="_subject" value="Nou missatge des de Quina.cat!">
+            <input type="hidden" name="_template" value="table">
+
+            <div class="form-group">
+                <label class="form-label">Tu nombre</label>
+                <input type="text" name="nom" class="form-input" placeholder="¿Cómo te llamas?" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Correo electrónico</label>
+                <input type="email" name="email" class="form-input" placeholder="ejemplo@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Mensaje</label>
+                <textarea name="missatge" class="form-input" rows="4" placeholder="En que puedo ayudarte?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit">
+                Enviar Mensaje
+            </button>
+            
+            <p style="font-size:0.8rem; color:#94a3b8; margin-top:15px">
+                * Te responderé al correo que me indiques en menos de 24h.  
+            </p>
+        </form>
+    </section>
 
   </main>
 
   <footer>
     <div class="container footer-content">
-      <p class="small">© 2025 <strong>GuSSI</strong>. Hecho en Cataluña.</p>
-      <div class="small" style="opacity:0.7; font-size: 0.8em; margin-top:5px">
-         GuSSI es un nombre comercial de Pol Gussinyer.
-      </div>
+      <p class="small">© 2025 <strong>GuSSI</strong>. Hecho en Catalunya.</p>
       <div class="small" style="opacity:0.7; margin-top:15px">
         <a href="mailto:pol@polgussi.cat" style="color:inherit">Soporte</a> &bull; 
         <a href="./privacitat_es.html" style="color:inherit">Privacidad</a>
