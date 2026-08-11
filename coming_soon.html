@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Quina — Aviat disponible</title>
+  <meta name="description" content="Quina — eina per projectar i controlar números de quina. Aviat disponible.">
+  <style>
+    :root{--accent:#0ea5a4;--bg:#0f172a;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;color:white;background:linear-gradient(180deg,#071428 0%,#071a2a 60%);min-height:100vh;display:flex;align-items:center;justify-content:center}
+    .wrap{max-width:900px;padding:28px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));box-shadow:0 10px 30px rgba(2,6,23,0.6);backdrop-filter:blur(4px);}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    .logo{width:64px;height:64px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;color:#012;font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:#cbd5e1;margin:0}
+    .buttons{display:flex;gap:10px;margin-top:8px}
+    .btn{background:var(--accent);color:#012;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.ghost{background:transparent;color:#9fb7b6;border:1px solid rgba(255,255,255,0.06)}
+    .info{color:#93a5a4;font-size:14px}
+    footer{margin-top:12px;color:#90a3a2;font-size:13px}
+    @media(min-width:720px){.grid{grid-template-columns:420px 1fr;align-items:center}}
+    .subscribe{display:flex;gap:8px}
+    input[type=email]{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:white;min-width:220px}
+    .note{font-size:13px;color:#9fb7b6}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div style="display:flex;gap:12px;align-items:center">
+          <div class="logo">Q</div>
+          <div>
+            <h1>Quina</h1>
+            <div class="note">Projeccions i control de quines — Windows + Android</div>
+          </div>
+        </div>
+
+        <p class="lead" style="margin-top:16px">Estem treballant perquè aviat puguis descarregar la demo i la versió PRO. Si vols ser dels primers a saber-ho, escriu-nos i t’avisarem quan estigui disponible.</p>
+
+        <div style="margin-top:14px" class="info">
+          <div style="margin-bottom:8px">Llançament previst: <strong>properament</strong></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <a class="btn" href="mailto:pol@polgussi.cat?subject=Vull%20saber%20m%C3%A9s%20de%20Quina">Contacta / Enviar correu</a>
+            <a class="btn ghost" href="https://polgussi.cat" target="_blank" rel="noopener noreferrer">Visita polgussi.cat</a>
+          </div>
+        </div>
+
+      </div>
+
+      <aside>
+        <div style="padding:12px;border-radius:10px;background:rgba(255,255,255,0.02)">
+          <div style="margin-bottom:8px;color:#cfe9e7;font-weight:700">Vols estar al dia?</div>
+          <form action="mailto:pol@polgussi.cat" method="post" enctype="text/plain">
+            <div class="subscribe">
+              <input type="email" name="email" placeholder="El teu email" required>
+              <button class="btn" type="submit">Avisar-me</button>
+            </div>
+            <div class="note" style="margin-top:8px">No compartirem el teu email amb ningú. Pots contactar a <a href="mailto:pol@polgussi.cat">pol@polgussi.cat</a>.</div>
+          </form>
+
+          <footer style="margin-top:12px">© 2026 Pol Gussinyer · <a href="mailto:pol@polgussi.cat">pol@polgussi.cat</a></footer>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
