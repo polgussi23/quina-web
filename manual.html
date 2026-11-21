@@ -90,7 +90,7 @@
     <h2 id="basics">1. Conceptes Bàsics</h2>
     <p>En obrir l'aplicació d'escriptori, veuràs que s'obren <strong>dues finestres</strong> diferents:</p>
     <ul>
-        <li><strong>Finestra de Projecció ("MainWindow"):</strong> És la pantalla que veurà el públic. Mostra la taula de números i els col·laboradors. Sempre està en pantalla completa.</li>
+        <li><strong>Finestra de Projecció:</strong> És la pantalla que veurà el públic. Mostra la taula de números i els col·laboradors. Sempre està en pantalla completa.</li>
         <li><strong>Finestra de Configuració ("Controlador"):</strong> És el teu panell de control privat. Des d'aquí configures els colors, els sponsors i veus la informació de connexió.</li>
     </ul>
     
@@ -104,45 +104,50 @@
     <p>L'aplicació està dissenyada per treballar amb dos monitors (o Portàtil + Projector).</p>
     <ol>
         <li>Connecta el projector al teu ordinador i configura Windows en mode <strong>"Estendre Pantalla"</strong>.</li>
-        <li>Al "Controlador", busca el desplegable anomenat <strong>"Pantalla"</strong>.</li>
+        <li>Al "Controlador", busca el desplegable anomenat <strong>"Selecció de pantalla"</strong>.</li>
         <li>Selecciona on vols enviar la projecció (per exemple: "Pantalla 2"). La finestra de projecció es mourà automàticament.</li>
     </ol>
 
     <h2 id="connexio">3. Connexió del Mòbil</h2>
-    <p>Per controlar la partida a distància, necessites l'app Android <strong>"Quina"</strong>.</p>
-    
     <div class="alert">
-        <strong>Important:</strong> El mòbil i l'ordinador han d'estar connectats a la <strong>mateixa xarxa Wi-Fi</strong>.
+        <strong>Important:</strong> El mòbil i l'ordinador han d'estar connectats a la <strong>mateixa xarxa Wi-Fi</strong> per poder establir la connexió.
     </div>
-
-    <h3>Pas 1: Obtenir la IP</h3>
-    <p>Al "Controlador" de l'ordinador, ves a la pestanya o apartat <strong>"INFO"</strong>. Allà hi trobaràs la teva <strong>IP Local</strong> (ex: <code>192.168.1.XX</code>) i el Port (sempre és <code>12345</code>).</p>
-
-    <h3>Pas 2: Configurar l'App Mòbil</h3>
+    <h3>Pas 1: Obtenir l'enllaç de connexió</h3>
+    <p>
+        Al <strong>"Controlador"</strong> de l'ordinador, ves a la pestanya o apartat <strong>"CONNEXIÓ REMOTA"</strong>.
+        Allà trobaràs l'enllaç per accedir al control remot de l'aplicació des del navegador, així com un <strong>codi QR</strong> per facilitar-hi l'accés des del mòbil.
+    </p>
+    <h3>Pas 2: Accedir al control remot des del mòbil</h3>
+    <p>
+        Tens dues maneres d'accedir al control remot:
+    </p>
     <ol>
-        <li>Obre l'app "Quina" al mòbil.</li>
-        <li>Ves a <strong>"Nova Connexió"</strong>.</li>
-        <li>Omple les dades:
-            <ul>
-                <li><strong>Nom:</strong> Posa un nom per recordar la sala (ex: "Pavelló").</li>
-                <li><strong>IP:</strong> Escriu la IP que has vist al Controlador.</li>
-                <li><strong>Port:</strong> Deixa el <code>12345</code> (ve per defecte).</li>
-            </ul>
+        <li>
+            <strong>Mitjançant el codi QR:</strong>
+            Obre la càmera del mòbil o una aplicació lectora de codis QR i escaneja el codi que apareix a l'apartat <strong>"CONNEXIÓ REMOTA"</strong> del Controlador.
         </li>
-        <li>Prem <strong>Guardar</strong>.</li>
+        <li>
+            <strong>Mitjançant l'enllaç:</strong>
+            Obre el navegador del mòbil (Chrome, Safari, etc.) i escriu-hi l'enllaç que apareix al Controlador, o bé copia'l i enganxa'l directament al navegador.
+        </li>
     </ol>
+    <h3>Pas 3: Començar a utilitzar el control remot</h3>
+    <p>
+        Un cop hagis accedit a l'enllaç, es carregarà la versió web del control remot.
+        Ja podràs utilitzar el mòbil per controlar l'aplicació sense necessitat d'instal·lar cap aplicació addicional.
+    </p>
 
     <img src="/img/img_mobile_conn.png" class="mobile-screenshot" alt="Pantalla de Connexió al Mòbil" onerror="this.style.display='none'">
 
-    <p>Si la connexió és correcta, l'ordinador mostrarà un avís i el mòbil obrirà el panell de control.</p>
+    <p>Si la connexió és correcta, veuràs el text <b>Connectat amb la quina</b> des de la web.</p>
 
-    <h2 id="joc">4. Funcionament del Joc (Des del Mòbil)</h2>
+    <h2 id="joc">4. Funcionament del Joc (Remotament)</h2>
     <p>Un cop connectat, tindràs el control total des del telèfon:</p>
     <ul>
-        <li><strong>Marcar números:</strong> Fes <strong>doble clic</strong> sobre qualsevol número de la graella (1-90) per marcar-lo o desmarcar-lo.</li>
-        <li><strong>Botó "Desfer":</strong> Si t'has equivocat, prem-lo per cancel·lar l'última acció.</li>
-        <li><strong>Botó "Netejar":</strong> Esborra tots els números per començar una nova partida.</li>
-        <li><strong>Botó "Ensenyar Col·laboradors":</strong> Força que es mostrin els sponsors a la pantalla gran.</li>
+        <li><strong>Marcar números:</strong> Fes <strong>doble clic</strong> sobre qualsevol número de la graella (1-90) per marcar-lo.</li>
+        <li><strong>Botó "Desfer últim":</strong> Si t'has equivocat, prem-lo per cancel·lar l'última acció.</li>
+        <li><strong>Botó "Reiniciar Quina":</strong> Esborra tots els números per començar una nova partida.</li>
+        <li><strong>Botó "Col·laboradors":</strong> Força que es mostrin els sponsors a la pantalla gran.</li>
     </ul>
 
     <h2 id="sponsors">5. Gestió d'Sponsors</h2>
@@ -165,6 +170,7 @@
     </ul>
 
     <h3>Visualització dels Col·laboradors</h3>
+    <p>Personalitza els col·laboradors des del botó "<b>Personalitzar Estil</b>"</p>
     <ul>
         <li><strong>Títol:</strong> Canvia el text de la capçalera (per defecte "Col·laboradors") i el seu color.</li>
         <li><strong>Fons:</strong> Canvia el color de fons de la barra lateral.</li>
@@ -175,7 +181,11 @@
     <h2 id="faq">7. Solució de Problemes</h2>
     
     <h4>El mòbil no es connecta</h4>
-    <p>Assegura't d'haver permès l'accés a xarxes privades/públiques quan Windows t'ho ha demanat la primera vegada (Firewall). Comprova que la IP del mòbil és idèntica a la de la pestanya INFO.</p>
+    <ul>
+      <li>Assegura't d'haver permès l'accés a xarxes privades/públiques quan Windows t'ho ha demanat la primera vegada (Firewall).</li>
+      <li>Comprova que estiguis connectat a la mateixa xarxa que l'ordinador des d'on s'executa l'app.</li>
+      <li>Vigila que l'enllaçç on accedeixis sigui exactament el mateix que es mostra a l'apartat de "CONNEXIÓ REMOTA".</li>
+    </ul>
 
     <h4>He tancat el controlador sense voler</h4>
     <p>Prem la tecla <span class="kbd">q</span> amb la finestra de projecció seleccionada i tornarà a aparèixer.</p>

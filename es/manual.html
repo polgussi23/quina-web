@@ -90,7 +90,7 @@
     <h2 id="basics">1. Conceptos Básicos</h2>
     <p>Al abrir la aplicación de escritorio, verás que se abren <strong>dos ventanas</strong> diferentes:</p>
     <ul>
-        <li><strong>Ventana de Proyección ("MainWindow"):</strong> Es la pantalla que verá el público. Muestra la tabla de números y los colaboradores. Siempre está en pantalla completa.</li>
+        <li><strong>Ventana de Proyección:</strong> Es la pantalla que verá el público. Muestra la tabla de números y los colaboradores. Siempre está en pantalla completa.</li>
         <li><strong>Ventana de Configuración ("Controlador"):</strong> Es tu panel de control privado. Desde aquí configuras los colores, los patrocinadores y ves la información de conexión.</li>
     </ul>
     
@@ -104,48 +104,51 @@
     <p>La aplicación está diseñada para trabajar con dos monitores (o Portátil + Proyector).</p>
     <ol>
         <li>Conecta el proyector a tu ordenador y configura Windows en modo <strong>"Extender Pantalla"</strong>.</li>
-        <li>En el "Controlador", busca el desplegable llamado <strong>"Pantalla"</strong>.</li>
+        <li>En el "Controlador", busca el desplegable llamado <strong>"Selección de pantalla"</strong>.</li>
         <li>Selecciona dónde quieres enviar la proyección (por ejemplo: "Pantalla 2"). La ventana de proyección se moverá automáticamente.</li>
     </ol>
 
     <h2 id="connexio">3. Conexión del Móvil</h2>
-    <p>Para controlar la partida a distancia, necesitas la app Android <strong>"Quina"</strong>.</p>
     
     <div class="alert">
-        <strong>Importante:</strong> El móvil y el ordenador deben estar conectados a la <strong>misma red Wi-Fi</strong>.
+        <strong>Importante:</strong> El móvil y el ordenador deben estar conectados a la <strong>misma red Wi-Fi</strong> para poder establecer la conexión.
     </div>
 
-    <h3>Paso 1: Obtener la IP</h3>
-    <p>En el "Controlador" del ordenador, ve a la pestaña o apartado <strong>"INFO"</strong>. Allí encontrarás tu <strong>IP Local</strong> (ej: <code>192.168.1.XX</code>) y el Puerto (siempre es <code>12345</code>).</p>
+    <h3>Paso 1: Obtener el enlace de conexión</h3>
+    <p>En el <b>"Controlador"</b> del ordenador, ve a la pestaña o apartado <strong>"CONEXIÓN REMOTA"</strong>. Allí encontrarás el enlace para poder acceder al control remoto de la aplicación desde el navegador, así como un <strong>código QR</strong> para facilitar el acceso desde el móvil.</p>
 
-    <h3>Paso 2: Configurar la App Móvil</h3>
+    <h3>Paso 2: Acceder al control remoto desde el móvil</h3>
+    <p>Tienes 2 maners de acceder al control remoto:</p>
     <ol>
-        <li>Abre la app "Quina" en el móvil.</li>
-        <li>Ve a <strong>"Nova Connexió"</strong> (Nueva Conexión).</li>
-        <li>Rellena los datos:
-            <ul>
-                <li><strong>Nom (Nombre):</strong> Pon un nombre para recordar la sala (ej: "Pabellón").</li>
-                <li><strong>IP:</strong> Escribe la IP que has visto en el Controlador.</li>
-                <li><strong>Port (Puerto):</strong> Deja el <code>12345</code> (viene por defecto).</li>
-            </ul>
+        <li>
+            <strong>Mediante el código QR:</strong>
+            Abre la cámara del móvil o una aplicación lectura de códigos QR y escanea el código que aparece en el apartado <strong>"CONNEXIÓN REMOTA"</strong> del Controlador.
         </li>
-        <li>Pulsa <strong>Guardar</strong>.</li>
+        <li>
+            <strong>Mediante el enlace:</strong>
+            Abre el navegador del móvil (Chrome, Safari, etc.) y escribe el enlace que aparece en el Controlador, o copia y pégalo directamente a tu navegador.
+        </li>
     </ol>
+    <h3>Paso 3: Empieza a utilitzar el control remoto</h3>
+    <p>
+        Una vez hayas accedido al enlace, se cargará la versión web del control remoto.
+        Ya podrás empezar a utilizar el móvil para controlar la aplicación sin necesidad de instalar ninguna aplicación adicional.
+    </p>
 
     <img src="/img/img_mobile_conn.png" class="mobile-screenshot" alt="Pantalla de Conexión en el Móvil" onerror="this.style.display='none'">
 
-    <p>Si la conexión es correcta, el ordenador mostrará un aviso y el móvil abrirá el panel de control.</p>
+    <p>Si la conexión es correcta, verás el texto <b>Conectado con la Quina</b> desde la web.</p>
 
-    <h2 id="joc">4. Funcionamiento del Juego (Desde el Móvil)</h2>
+    <h2 id="joc">4. Funcionamiento del Juego (Remotamente)</h2>
     <p>Una vez conectado, tendrás el control total desde el teléfono:</p>
     <ul>
-        <li><strong>Marcar números:</strong> Haz <strong>doble clic</strong> sobre cualquier número de la parrilla (1-90) para marcarlo o desmarcarlo.</li>
-        <li><strong>Botón "Desfer" (Deshacer):</strong> Si te has equivocado, púlsalo para cancelar la última acción.</li>
-        <li><strong>Botón "Netejar" (Limpiar):</strong> Borra todos los números para empezar una nueva partida.</li>
-        <li><strong>Botón "Ensenyar Col·laboradors":</strong> Fuerza que se muestren los patrocinadores en la pantalla grande.</li>
+        <li><strong>Marcar números:</strong> Haz <strong>doble clic</strong> sobre cualquier número de la cuadrícula (1-90) para marcarlo.</li>
+        <li><strong>Botón "Deshacer último":</strong> Si te has equivocado, púlsalo para cancelar la última acción.</li>
+        <li><strong>Botón "Reiniciar Quina":</strong> Borra todos los números para empezar una nueva partida.</li>
+        <li><strong>Botón "Colaboradores":</strong> Fuerza la visualización de los patrocinadores en la pantalla grande.</li>
     </ul>
 
-    <h2 id="sponsors">5. Gestión de Patrocinadores</h2>
+    <h2 id="sponsors">5. Gestión de Colaboradores</h2>
     <p>Puedes personalizar la barra lateral de la proyección desde el "Controlador". Hay dos botones clave:</p>
     <ul>
         <li><strong>Imatges (Imágenes):</strong> Abre una ventana para seleccionar y cargar los logotipos (JPG/PNG) de tus colaboradores. Puedes seleccionar múltiples a la vez.</li>
@@ -165,6 +168,7 @@
     </ul>
 
     <h3>Visualización de los Colaboradores</h3>
+    <p>Personaliza los colaboradores dede el botón "<b>Personalizar Estilo</b>"</p>
     <ul>
         <li><strong>Título:</strong> Cambia el texto de la cabecera (por defecto "Col·laboradors") y su color.</li>
         <li><strong>Fondo:</strong> Cambia el color de fondo de la barra lateral.</li>
@@ -175,7 +179,11 @@
     <h2 id="faq">7. Solución de Problemas</h2>
     
     <h4>El móvil no se conecta</h4>
-    <p>Asegúrate de haber permitido el acceso a redes privadas/públicas cuando Windows te lo ha pedido la primera vez (Firewall). Comprueba que la IP del móvil es idéntica a la de la pestaña INFO.</p>
+    <ul>
+      <li>Assegurate de haber permitido el acceso a redes privades/públicas cuando Windows lo pidió la primera vez(Firewall).</li>
+      <li>Comprueba que estés conectado a la misma red que el ordenador desde donde se ejecuta la app.</li>
+      <li>Ten presente que el enlace donde accedas sea exactamente el mismo que se muestra en el apartado de "CONEXIÓN REMOTA"</li>
+    </ul>
 
     <h4>He cerrado el controlador sin querer</h4>
     <p>Pulsa la tecla <span class="kbd">q</span> con la ventana de proyección seleccionada y volverá a aparecer.</p>
